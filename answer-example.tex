@@ -1,0 +1,116 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+
+% Page layout
+\setlength\topmargin{0cm}
+\setlength\textwidth{16.5cm}
+\setlength\oddsidemargin{0cm}
+\setlength\evensidemargin{0cm}
+\setlength\headheight{0cm}
+\setlength\textheight{21cm}
+
+% Date formatting
+\usepackage{datetime}
+\newdateformat{sigdate}{\ordinaldate{\THEDAY} day of \monthname[\THEMONTH], \THEYEAR}
+
+% Line spacing
+\usepackage{setspace}
+\doublespacing
+
+% New Commands
+%
+% My client
+\newcommand{\client}{ABC Corporate Enterprises, Inc. }
+\newcommand{\csn}{ABCCE }
+
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+\begin{document}
+\singlespacing
+
+\begin{center}
+UNITED STATES DISTRICT COURT\\
+WESTERN DISTRICT OF NORTH CAROLINA\\
+CHARLOTTE DIVISION\\
+\end{center}
+
+\doublespacing
+
+\noindent Patent Troll, Inc.
+
+\noindent \hspace{2cm}Plaintiff,
+
+\noindent v.\ \hspace{9cm}Civil Action No.:  3:08CV0666-C
+
+\noindent \client
+
+\noindent \hspace{2cm}Defendant.\
+
+\noindent \line(1,0){200}
+
+\singlespacing
+\begin{center}
+Defendant ABC Corporate Enterprises, Inc.'s Answer to Plaintiff's Amended Complaint
+\end{center}
+
+\doublespacing
+
+Defendant \client (``\csn''), by and through its undersigned attorneys, files this answer to the Plaintiff's Complaint and states as follows:
+
+\begin{enumerate}
+\item Denied.
+\item Denied.
+\item Denied.
+\item Admitted.
+\item \csn is without sufficient information to form a belief as to the truth of the allegations contained in paragraph 5, and therefore they are denied.
+\item Denied.
+\item \csn is without sufficient information to form a belief as to the truth of the allegations contained in paragraph 7, and therefore they are denied.
+\item \csn is without sufficient information to form a belief as to the truth of the allegations contained in paragraph 8, and therefore they are denied.
+\item Denied.
+\item Denied.
+\item \csn is without sufficient information to form a belief as to the truth of the allegations contained in paragraph 11, and therefore they are denied.
+\item Denied.
+\item Denied.
+\item Denied.
+\item \csn reincorporates its answers from paragraphs 1--14 above.
+\item Denied.
+\item \csn without sufficient information to form a belief as to the truth of the allegations contained in paragraph 16, and therefore they are denied.
+\end{enumerate}
+
+Wherefore \csn prays this Court to dismiss the Plaintiff's Amended Complaint in its entirety and award to \csn all costs, fees, and other such relief as this Court deems just.\newpage
+
+Respectfully submitted this \sigdate\today.
+
+\vspace{1cm}
+
+\singlespacing
+\hspace{7cm}\line(1,0){150}
+
+\hspace{7cm}Bob Smith
+
+\hspace{7cm}NC No. 12345
+
+\hspace{7cm}Attorneys for \client
+
+\hspace{7cm}Example Law Firm, PLLC
+
+\hspace{7cm}720 Michigan Avenue
+
+\hspace{7cm}Chicago, IL 55555
+
+\hspace{7cm}Telephone: 312
+
+\hspace{7cm}E-mail: bob.smith@lawfirm.com
+
+\end{document}  
